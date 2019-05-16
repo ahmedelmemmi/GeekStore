@@ -1,0 +1,237 @@
+@import url('https://fonts.googleapis.com/css?family=Patrick+Hand');
+@import url('https://fonts.googleapis.com/css?family=Fredoka+One');
+
+
+body{
+    padding: 0;
+    margin:0px;
+    height: 100%;
+    width: 100%;
+    /* overflow: hidden; */
+}
+.loading-page{
+  background: #34495e;
+  width: 100vh;
+  height: 100vh;
+}
+.loading-page .counter h1{
+  position: fixed;
+  top: 50%;
+  left:50%;
+  transform: translate(-50%,-50%);
+  color: #ffda72;
+  font-size: 300px;
+  font-weight: bolder;
+  margin-top: -10px;
+}
+h2{
+  position: fixed;
+  top: 70%;
+  left: 40%;
+  color: #ffda72;
+  font-size: 50px;
+  font-weight: normal;
+  margin-top: -10px;
+}
+.container-fluid{
+  padding: 0;
+  margin:0px;
+}
+#logo{
+  width: 20%;
+}
+.carousel-item{
+  bottom: 20%;
+  height: 400px;  
+}
+
+.carousel-caption{
+  margin-bottom: 180px;
+
+}
+.opacity{
+  opacity: 0.6;
+  background-color: black;
+}
+h4{
+  font-family: 'Fredoka One', cursive;
+}
+.d-block{
+  transform: translate(70,0%);
+  justify-content: center;
+}
+.leftside{
+  background-color: #ffda72;
+}
+.navbar-nav{
+  text-align: center;
+  font-family: 'Patrick Hand', cursive;
+  font-size: 25px;
+}
+
+footer{
+  z-index: 4;
+  color: #34495e;
+  background: #ffda72;
+}
+small{
+  font-size: 17px;
+}
+/**********Product style*******/
+.product{
+  z-index: 3;
+  display: flex;
+  flex-wrap: wrap;
+  background: #34495e;
+  }
+  .product-card{
+  /* flex: 1;
+  flex-basis: 16%; */
+  flex: 1 30%;
+  padding: 2%;
+  background-color: #34495e;
+  
+  }
+  .product-image{
+      width: 350px;
+      /* height: 150px; */
+  }
+  .product-image img{
+  max-width: 100%;
+  }
+  .product-info{
+  text-align: center;
+  }
+  @media (max-width: 920px){
+    .product-card{
+      flex: 1 21%;
+     }
+     .product .product-card:first-child,
+     .product .product-card:nth-child(2){
+         flex: 2 46%;
+     }
+  } 
+  @media (max-width: 600px){
+    .navbar-brand{
+      text-align: center;
+    }
+    .product-card{
+      flex: 1 40%;
+     }
+     .product .product-card:first-child,
+     .product .product-card{
+         flex: 2 80%;
+     }
+  } 
+  .img-wrapper{
+      width: 80%;
+      height: auto;
+      margin: 5% 10% 5% 10%;
+  }
+  /* .produ img{
+      width: 100%;
+      opacity: 1;
+      display: block;
+      transition: 0.5s ease;
+      height: auto;
+  } */
+  /* .product-info{
+      opacity: 0;
+      transition: 0.5s ease;
+      background-color: #ffffff;
+      position: relative;
+      top: 50%; 
+      left:50%;
+      transform: translate(-50%,-50%);
+      -ms-transform: translate(-50%,-50%);
+      margin-top: -30%;
+      width: 35%;
+      height:auto ;
+  } */
+  /* .product-card:hover .product-info{
+      opacity: 0.9;
+  }
+  .product-card:hover img{
+      opacity: 0.7;
+  } */
+  .product-info h5{
+      text-align: center;
+      width: 100%;
+      color: #ffda72;
+  }
+  .product-info h6{
+    text-align: center;
+    color: #ffda72;
+  }
+  #top{
+      font-size: 4.5vw;
+  }
+  #bottom{
+      font-size: 7vw;
+  }
+  .fas{
+      size: 500px;
+  }
+/* 
+.product-card a{
+  z-index: 4;
+  position: relative;
+  padding: 15px 30px;
+  font-size: 15px;
+  letter-spacing: 1px;
+  text-decoration: none;
+  color: #fff;
+  box-shadow: 0 0 40px rgb(0,0,0,.5);
+  overflow: hidden;
+}
+.product-card a span{
+  position: absolute;
+  display: block;
+  background: #03a9f4;
+}
+.product-card a span:nth-child(1){
+  top: 0;
+  left: 0;
+  width: 2px;
+  height: 100%;
+  transform: translateY(0);
+}
+.product-card a:hover span:nth-child(1){
+  transition: 0.5s;
+  transform: translateY(-100%);
+}
+.product-card a span:nth-child(2){
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  transform: translateX(-100%);
+}
+.product-card a:hover span:nth-child(2){
+  transition: 0.75s;
+  transform: translateX(100%);
+  transition-delay: 0.25s;
+}
+.product-card a span:nth-child(3){
+  top: 0;
+  right: 0;
+  width: 2px;
+  height: 100%;
+  transform: translateY(-100%);
+}
+.product-card a:hover span:nth-child(3){
+  transition: 0.5s;
+  transition-delay: 0.5s;
+  transform: translateY(0);
+} */
+
+.btn{
+  margin-left:38%; 
+  border: 1px solid #ffda72;
+  background: none;
+  padding: 10px 20px;
+  font-size: 20px;
+  cursor: pointer;
+  color: #ffda72;
+  transition: 0.8s;
+}
